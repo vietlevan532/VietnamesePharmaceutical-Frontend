@@ -16,4 +16,8 @@ describe('App', () => {
       })
     ).toHaveTextContent('Hello world');
   });
+  it('Renders not found if invalid path', () => {
+    render(<App />);
+    expect(screen.getAllByTitle('', {}));
+  });
 });
