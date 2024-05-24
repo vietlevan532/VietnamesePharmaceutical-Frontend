@@ -1,8 +1,18 @@
 import './LoginPage.css';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import Header from '../Common/Header/Header';
 
 function LoginPage() {
+  const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <div className="login-page">
       <Header />
@@ -23,11 +33,32 @@ function LoginPage() {
               <form action="">
                 <div className="login-input">
                   <input type="text" placeholder="Email hoặc số điện thoại" />
-                  <input type="password" placeholder="Mật khẩu" />
+                  <div className="password-container">
+                    <input
+                      type={showPassword ? 'text' : 'password'}
+                      id="password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      placeholder="Mật khẩu"
+                    />
+                    <FontAwesomeIcon
+                      icon={showPassword ? faEyeSlash : faEye}
+                      id="password-icon"
+                      onClick={toggleShowPassword}
+                    />
+                  </div>
                 </div>
-                <Link id="forgot-password" to="/">
-                  Quên mật khẩu?
-                </Link>
+                <div className="password-active">
+                  <div className="save-password">
+                    <input type="checkbox" id="remember-password" />
+                    <label htmlFor="remember-password">Lưu mật khẩu</label>
+                  </div>
+                  <div className="forgot-password">
+                    <Link id="forgot-password" to="/">
+                      Quên mật khẩu?
+                    </Link>
+                  </div>
+                </div>
                 <button id="login-btn" type="submit">
                   Đăng nhập
                 </button>
