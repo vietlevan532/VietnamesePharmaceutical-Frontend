@@ -30,6 +30,7 @@
     font-style: normal;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 35px 0 25px 0;
 }
 
 .left {
@@ -38,20 +39,6 @@
 
 #logo {
     width: 100%;
-}
-
-.login-input > input {
-    height: 35px;
-    width: 95%;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #0cba69;
-    text-decoration: none;
-    outline: none;
-    color: #434444;
-    font-style: normal;
-    font-size: 12px;
-    font-weight: bold;
 }
 
 #login-btn {
@@ -96,11 +83,15 @@
     margin-top: 2px;
 }
 
+#remember-password, #label-remember-password {
+    cursor: pointer;
+}
+
 .password-container {
     position: relative;
 }
 
-.password-container > input {
+.signin-input {
     height: 35px;
     width: 95%;
     margin-bottom: 15px;
@@ -108,7 +99,7 @@
     border: 1px solid #0cba69;
     outline: none;
     color: #434444;
-    font-style: normal;
+    font-style: italic;
     font-size: 12px;
     font-weight: bold;
 }
@@ -121,4 +112,22 @@
     transform: translateY(-50%);
     cursor: pointer;
     color: #888;
+}
+
+.signin-input-error {
+    height: 35px;
+    width: 95%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1.5px solid red;
+    text-decoration: none;
+    outline: none;
+    color: #434444;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.signin-input-error::placeholder {
+    color: rgba(255, 0, 0, 0.644);
 }

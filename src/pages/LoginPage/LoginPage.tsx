@@ -1,16 +1,40 @@
 import './LoginPage.css';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useState, FormEvent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 import Header from '../Common/Header/Header';
 
+interface Errors {
+  emailOrPhoneNumber?: string;
+  password?: string;
+}
+
 function LoginPage() {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const [emailOrPhoneNumber, setEmailOrPhoneNumber] = useState('');
+  const [errors, setErrors] = useState<Errors>({});
+
+  const navigate = useNavigate();
 
   const toggleShowPassword = () => {
     setShowPassword(!showPassword);
+  };
+
+  const handleSubmitLogin = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const newErrors: Errors = {};
+    if (!emailOrPhoneNumber) {
+      newErrors.emailOrPhoneNumber = 'Vui lòng nhập email hoặc số điện thoại *';
+    }
+    if (!password) {
+      newErrors.password = 'Vui lòng nhập mật khẩu *';
+    }
+    setErrors(newErrors);
+    if (Object.keys(newErrors).length === 0) {
+      navigate('/signup');
+    }
   };
 
   return (
@@ -30,16 +54,24 @@ function LoginPage() {
               <div className="login-header">
                 <h2 id="title">ĐĂNG NHẬP</h2>
               </div>
-              <form action="">
+              <form onSubmit={handleSubmitLogin}>
                 <div className="login-input">
-                  <input type="text" placeholder="Email hoặc số điện thoại" />
+                  <input
+                    type="text"
+                    className={`signin-input ${errors.emailOrPhoneNumber ? 'signin-input-error' : ''}`}
+                    placeholder={
+                      errors.emailOrPhoneNumber || 'Email hoặc số điện thoại *'
+                    }
+                    value={emailOrPhoneNumber}
+                    onChange={(e) => setEmailOrPhoneNumber(e.target.value)}
+                  />
                   <div className="password-container">
                     <input
                       type={showPassword ? 'text' : 'password'}
-                      id="password"
+                      className={`signin-input ${errors.password ? 'signin-input-error' : ''}`}
+                      placeholder={errors.password || 'Mật khẩu *'}
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
-                      placeholder="Mật khẩu"
                     />
                     <FontAwesomeIcon
                       icon={showPassword ? faEyeSlash : faEye}
@@ -51,7 +83,12 @@ function LoginPage() {
                 <div className="password-active">
                   <div className="save-password">
                     <input type="checkbox" id="remember-password" />
-                    <label htmlFor="remember-password">Lưu mật khẩu</label>
+                    <label
+                      htmlFor="remember-password"
+                      id="label-remember-password"
+                    >
+                      Lưu mật khẩu
+                    </label>
                   </div>
                   <div className="forgot-password">
                     <Link id="forgot-password" to="/">
