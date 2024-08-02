@@ -5,7 +5,7 @@
     align-items: center;
     position: fixed;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: whitesmoke;
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.12);
     z-index: 1;
 }
@@ -16,7 +16,7 @@
     margin-left: 2rem;
     width: 50%;
     height: 100%;
-    color: #09884d;
+    color: #38d39f;
    
 }
 
@@ -33,29 +33,27 @@
     width: 100px;
     padding: 8px;
     color: #fff;
-    background: #0cba69;
-    border: 1px solid #0cba69;
+    background: #38d39f;
+    border: 1px solid #38d39f;
     border-radius: 0 10px 10px 0;
     font-weight: 600;
-    font-style: normal;
     font-size: 10px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 .signup-btn:hover {
-    background-color: #09884d; 
+    background-color: #38d39f; 
     transform: scale(1.05);
 }
 
 .login-btn {
     width: 100px;
     padding: 8px;
-    color: #09884d;
-    border: 1px solid #0cba69;
+    color: #38d39f;
+    border: 1px solid #38d39f;
     border-radius: 10px 0 0 10px;
     font-weight: 600;
-    font-style: normal;
     font-size: 10px;
     text-align: center;
     cursor: pointer;

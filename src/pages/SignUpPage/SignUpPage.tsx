@@ -9,7 +9,7 @@ interface Errors {
   firstName?: string;
   lastName?: string;
   birthDate?: string;
-  role?: string;
+  position?: string;
   gender?: string;
   email?: string;
   phoneNumber?: string;
@@ -23,7 +23,7 @@ function SignUpPage() {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [birthDate, setBirthdate] = useState('');
-  const [role, setRole] = useState('');
+  const [position, setRole] = useState('');
   const [gender, setGender] = useState('');
   const [email, setEmail] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -63,7 +63,7 @@ function SignUpPage() {
     if (!lastName) newErrors.lastName = 'Họ là bắt buộc *';
     if (!firstName) newErrors.firstName = 'Tên là bắt buộc *';
     if (!birthDate) newErrors.birthDate = 'Nhập ngày sinh đầy đủ *';
-    if (!role) newErrors.role = 'Bạn là?';
+    if (!position) newErrors.position = 'Bạn là?';
     if (!gender) newErrors.gender = 'Chọn giới tính *';
     if (!email) newErrors.email = 'Nhập email *';
     if (!phoneNumber) newErrors.phoneNumber = 'Nhập số điện thoại *';
@@ -118,8 +118,8 @@ function SignUpPage() {
                   <div className="role-gender">
                     <select
                       id="role"
-                      className={`signup-input input-right ${errors.role ? 'signup-input-error' : ''}`}
-                      value={role}
+                      className={`signup-input input-right ${errors.position ? 'signup-input-error' : ''}`}
+                      value={position}
                       onChange={(e) => setRole(e.target.value)}
                     >
                       <option className="role-option" value="" defaultChecked>
