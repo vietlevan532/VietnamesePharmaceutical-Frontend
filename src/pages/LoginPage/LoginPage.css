@@ -9,15 +9,7 @@ body{
     overflow: hidden;
 }
 
-.wave{
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	height: 100%;
-	z-index: -1;
-}
-
-.container{
+.container-login{
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -51,15 +43,20 @@ form{
     height: 100px;
 }
 
-.login-content h2{
+.login-content .register-logo{
 	margin: 25px 0;
-	color: #333;
-	text-transform: uppercase;
+	margin-top: -1em;
 	font-size: 2.9rem;
-	text-decoration: underline;
 	font-weight: bold;
-	font-family: fantasy;
-	color: #555;
+}
+
+.login-content .register-logo a {
+	text-decoration: none;
+	color:  #555;
+}
+
+.login-content .register-logo span {
+	color: #38d39f;
 }
 
 .login-content .input-div{
@@ -137,7 +134,7 @@ form{
 	color: #38d39f;
 }
 
-.input-div > div > input{
+.input{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -229,7 +226,7 @@ form{
 	margin: 25px 0;
 }
 
-.btn-other-account {
+.other-account {
 	height: 100%;
 	width: 48%;
 	border: 1px solid #aca8a8;
@@ -238,7 +235,12 @@ form{
 	align-items: center;
 	justify-content: center;
 	padding: 5px;
+	transition: .3s;
 	cursor: pointer;
+}
+
+.other-account:hover {
+	background-color: #d8d8d8;
 }
 
 .registration-way {
@@ -249,7 +251,7 @@ form{
 
 
 @media screen and (max-width: 1050px){
-	.container{
+	.container-login{
 		grid-gap: 5rem;
 	}
 }
@@ -259,7 +261,7 @@ form{
 		width: 290px;
 	}
 
-	.login-content h2{
+	.login-content .register-logo{
         font-size: 2.4rem;
         margin: 8px 0;
 	}
@@ -270,15 +272,11 @@ form{
 }
 
 @media screen and (max-width: 900px){
-	.container{
+	.container-login{
 		grid-template-columns: 1fr;
 	}
 
 	.img{
-		display: none;
-	}
-
-	.wave{
 		display: none;
 	}
 

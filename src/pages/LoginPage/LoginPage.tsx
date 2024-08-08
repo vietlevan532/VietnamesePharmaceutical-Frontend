@@ -8,7 +8,7 @@ import {
   faEye,
   faEyeSlash,
 } from '@fortawesome/free-solid-svg-icons';
-import Header from '../Common/Header/Header';
+import HeaderAuth from '../Common/Header/HeaderAuth';
 
 interface Errors {
   login?: string;
@@ -58,16 +58,19 @@ function LoginPage() {
 
   return (
     <>
-      <Header />
-      <img src="wave.png" alt="wave.png" className="wave" />
-      <div className="container">
+      <HeaderAuth title="Đăng nhập" path="/#/signup" change_form="Đăng ký" />
+      <div className="container-login">
         <div className="img">
           <img src="bg.svg" alt="Background Logo" />
         </div>
         <div className="login-content">
           <form onSubmit={handleSubmitLogin}>
-            <img src="pharmaceutical_logo_design.png" alt="Avatar logo" />
-            <h2 className="title">Xin chào!</h2>
+            <div className="register-logo">
+              <a href="/">
+                <span>.pharmacy</span>
+                VN
+              </a>
+            </div>
             <div className="input-div one">
               <div className="i">
                 <FontAwesomeIcon icon={faUser} style={{ transition: '.3s' }} />
@@ -150,6 +153,7 @@ function LoginPage() {
                   marginTop: '-8px',
                   fontSize: '14px',
                   fontFamily: 'sans-serif',
+                  userSelect: 'none',
                 }}
               >
                 HOẶC
@@ -159,21 +163,23 @@ function LoginPage() {
               </div>
             </div>
             <div className="other-method-login">
-              <div className="btn-other-account">
+              <div className="other-account">
                 <img
-                  src="avatar.svg"
+                  src="google-logo.png"
                   alt="Google logo"
-                  style={{ width: '40px', height: '40px' }}
+                  style={{ width: '35px', height: '35px' }}
                 />
-                <p style={{ marginLeft: '5px' }}>Google</p>
+                <p style={{ marginLeft: '5px', userSelect: 'none' }}>Google</p>
               </div>
-              <div className="btn-other-account">
+              <div className="other-account">
                 <img
-                  src="avatar.svg"
+                  src="facebook_logo.png"
                   alt="Facebook logo"
-                  style={{ width: '40px', height: '40px' }}
+                  style={{ width: '35px', height: '35px' }}
                 />
-                <p style={{ marginLeft: '5px' }}>Facebook</p>
+                <p style={{ marginLeft: '5px', userSelect: 'none' }}>
+                  Facebook
+                </p>
               </div>
             </div>
             <div className="registration-way">
@@ -182,7 +188,11 @@ function LoginPage() {
               </p>
               <Link
                 to="/signup"
-                style={{ color: '#32be8f', marginLeft: '5px' }}
+                style={{
+                  color: '#32be8f',
+                  marginLeft: '5px',
+                  userSelect: 'none',
+                }}
               >
                 Đăng ký
               </Link>
