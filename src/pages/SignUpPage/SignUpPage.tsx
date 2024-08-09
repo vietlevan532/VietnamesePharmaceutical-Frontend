@@ -1,6 +1,7 @@
 import './SignUpPage.css';
 import { useState } from 'react';
 import HeaderAuth from '../Common/HeaderAuth/HeaderAuth';
+import Footer from '../Common/Footer/Footer';
 
 function SignUpPage() {
   const [activeStep, setActiveStep] = useState(1);
@@ -220,6 +221,7 @@ function SignUpPage() {
           </form>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

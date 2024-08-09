@@ -1,7 +1,7 @@
 .header-auth {
     top: 0;
     background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
-    /* margin: 2em 0; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header-auth-container {

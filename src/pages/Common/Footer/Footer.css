@@ -1,0 +1,154 @@
+.footer {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: block;
+    border-top: 5px solid #38d39f;
+    box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    top: 0;
+    margin: 0 2em;
+}
+
+.footer-overall {
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.overall-top {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 0 5em;
+}
+
+.ul {
+    padding: 0.5em;
+}
+
+.overall-top .items {
+    margin: 2em 0;
+}
+
+.overall-top .items span {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.ul .item {
+    padding-top: 12px;
+}
+
+.ul .item a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.ul .items .payment-img {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.ul .items .payment-img img {
+    width: 3.5em;
+    height: 1.5em;
+    margin: 8px 0;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.12);
+}
+
+.ul .items .app-img img {
+    width: 8em;
+    height: 3em;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.12);
+}
+
+.overall-middle {
+    padding: 2em 5em;
+}
+
+.overall-bottom {
+    padding: 0 5em;
+    background-color: whitesmoke;
+}
+
+.company-country {
+    display: flex;
+    padding: 1em 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-text {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.country-name {
+    padding: 0 5px;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.country-name-space {
+    user-select: none;
+}
+
+.policy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4em;
+}
+
+.policy-link {
+    margin: 0 20px;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.policy-name-space {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #dfdfdf;
+}
+
+.credentials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credential {
+    margin: 0 1em;
+}
+
+.credentials .credential img {
+    width: 8.5em;
+    height: 5em;
+}
+
+.footer-information {
+    display: block;
+    text-align: center;
+    padding: 0 5em 2em 5em;
+    background-color: whitesmoke;
+}
+
+.company-name {
+    margin-bottom: 3em;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.footer-information .info {
+    margin: 8px 0;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+}

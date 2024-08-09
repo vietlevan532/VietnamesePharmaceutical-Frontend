@@ -9,6 +9,7 @@ import {
   faEyeSlash,
 } from '@fortawesome/free-solid-svg-icons';
 import HeaderAuth from '../Common/HeaderAuth/HeaderAuth';
+import Footer from '../Common/Footer/Footer';
 
 interface Errors {
   login?: string;
@@ -200,6 +201,7 @@ function LoginPage() {
           </form>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
