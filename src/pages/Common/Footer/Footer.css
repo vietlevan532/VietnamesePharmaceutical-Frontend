@@ -58,12 +58,14 @@
     height: 1.5em;
     margin: 8px 0;
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.12);
+    user-select: none;
 }
 
 .ul .items .app-img img {
     width: 8em;
     height: 3em;
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.12);
+    user-select: none;
 }
 
 .overall-middle {
@@ -132,6 +134,7 @@
 .credentials .credential img {
     width: 8.5em;
     height: 5em;
+    user-select: none;
 }
 
 .footer-information {
