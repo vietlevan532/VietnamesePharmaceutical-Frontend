@@ -141,7 +141,7 @@ function LoginPage() {
                   Nhớ tôi!
                 </label>
               </div>
-              <Link id="forgot-password" to="/">
+              <Link id="forgot-password" to="/forgot-password">
                 Quên mật khẩu?
               </Link>
             </div>

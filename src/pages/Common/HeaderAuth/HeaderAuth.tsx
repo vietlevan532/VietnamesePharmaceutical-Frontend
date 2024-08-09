@@ -21,7 +21,7 @@ function HeaderAuth({ title, path, change_form }: HeaderAuthProps) {
         </div>
         <div className="header-auth-support">
           <a href="/">Bạn cần giúp đỡ?</a>
-          <span>|</span>
+          <span>{change_form.length <= 0 ? '' : '|'}</span>
           <a href={path}>{change_form}</a>
         </div>
       </div>
