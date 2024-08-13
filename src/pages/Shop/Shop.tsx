@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import Header from './Common/Header/Header';
 import Footer from './Common/Footer/Footer';
 
-function Home() {
+function Shop() {
   return (
     <>
       <Header />
@@ -17,4 +17,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Shop;

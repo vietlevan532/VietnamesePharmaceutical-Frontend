@@ -1,7 +1,7 @@
 import './SignUpPage.css';
 import { useState } from 'react';
-import HeaderAuth from '../Common/HeaderAuth/HeaderAuth';
-import Footer from '../Common/Footer/Footer';
+import HeaderAuth from '../HeaderAuth/HeaderAuth';
+import Footer from '../Shop/Common/Footer/Footer';
 
 function SignUpPage() {
   const [activeStep, setActiveStep] = useState(1);

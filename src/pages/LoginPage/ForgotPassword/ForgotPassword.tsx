@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-import HeaderAuth from '../../Common/HeaderAuth/HeaderAuth';
-import Footer from '../../Common/Footer/Footer';
+import HeaderAuth from '../../HeaderAuth/HeaderAuth';
+import Footer from '../../Shop/Common/Footer/Footer';
 
 function ForgotPassword() {
   const navigate = useNavigate();

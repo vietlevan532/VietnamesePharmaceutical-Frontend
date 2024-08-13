@@ -8,8 +8,8 @@ import {
   faEye,
   faEyeSlash,
 } from '@fortawesome/free-solid-svg-icons';
-import HeaderAuth from '../Common/HeaderAuth/HeaderAuth';
-import Footer from '../Common/Footer/Footer';
+import HeaderAuth from '../HeaderAuth/HeaderAuth';
+import Footer from '../Shop/Common/Footer/Footer';
 
 interface Errors {
   login?: string;
