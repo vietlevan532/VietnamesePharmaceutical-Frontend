@@ -6,6 +6,16 @@ import {
   FaStar,
 } from 'react-icons/fa';
 
+interface Product {
+  id: number;
+  name: string;
+  image: string;
+  price: number;
+  rating: number;
+  timeLeft: number;
+  totalSales: number;
+}
+
 function ProductComponent({
   id,
   name,

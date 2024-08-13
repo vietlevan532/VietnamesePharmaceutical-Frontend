@@ -5,7 +5,7 @@ import NotFound from './pages/NotFound';
 import LoginPage from './pages/LoginPage/LoginPage';
 import ForgotPassword from './pages/LoginPage/ForgotPassword/ForgotPassword';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
-import ProductComponent from './pages/Component/Product/ProductComponent';
+import CategoryComponent from './pages/Component/Category/CategoryComponent';
 
 export function App() {
   return (
@@ -13,15 +13,10 @@ export function App() {
       <Route
         path="/product"
         element={
-          <ProductComponent
+          <CategoryComponent
             id={1}
             name="MASSDROP X SENNHEISER HD 6XX HEADPHONES"
             image="/images/product.jpg"
-            price={8.839}
-            rating={5}
-            timeLeft={26}
-            totalSales={5762}
-            productType="openBackHeadphone"
           />
         }
       />
