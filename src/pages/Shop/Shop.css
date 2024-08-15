@@ -1,0 +1,42 @@
+.shop-home {
+    width: 100vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    margin-top: 8rem; /*  body standard  */
+}
+
+.container-shop-home {
+    display: block;
+    background-color: whitesmoke
+}
+
+.banner-content {
+    top: 0;
+    background-color: white;
+    padding: 1rem;
+    border: 5px solid mediumvioletred;
+}
+
+.content-infor {
+    margin-top: 1rem;
+    display: block;
+    margin: 2rem 7rem; /*  shop-home-page standard  */
+    border: 5px solid rgb(114, 114, 235);
+}
+
+.categories-content,
+.best-seller,
+.ads,
+.mall-content,
+.top-search,
+.product-suggestion {
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.best-seller {
+
+}
+
+

@@ -1,0 +1,93 @@
+/* Account setting */
+.account-setting {
+    background-color: whitesmoke;
+}
+
+.account-setting>.account {
+    display: flex;
+    padding: 15px;
+}
+
+.account-img {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 12px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .13);
+}
+
+.account-name>h3 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.account-name>a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #999;
+}
+
+#faPen {
+    margin-right: 5px;
+}
+
+.account-icon {
+    margin-right: 12px;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+#faUser, #faNoteMedical {
+    color: #5990dd;
+}
+
+#faBell, #faTicket {
+    color: #38d39f;
+}
+
+#faCoins {
+ color: #eeb52f;
+}
+
+.options {
+    padding: 0 15px;
+}
+
+.option {
+    margin: 15px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.option>a {
+    text-decoration: none;
+    color: inherit;
+    transition: .2s;
+}
+
+.option>a:hover {
+    color: #38d39f;
+}
+
+.sub-option-list {
+    display: block;
+    padding: 0 2rem;
+}
+
+.sub-option {
+    font-size: 15px;
+    margin: 12px 0;
+    color: #555;
+}
+
+.sub-option>a {
+    text-decoration: none;
+    color: inherit;
+    transition: .2s;
+}
+.sub-option>a:hover {
+    color: #38d39f;
+}
+/* Account setting end */

@@ -1,0 +1,170 @@
+/* CSS Common */
+.profile {
+    margin-top: 8rem;
+    width: 100vw;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 2rem 8rem;
+    justify-content: center;
+}
+/* CSS Common */
+
+
+/* Profile content */
+.profile-content {
+    display: grid;
+    grid-template-rows: 15% 65% 20%;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .13);
+    border-radius: 2px;
+    padding: 0 2rem;
+}
+
+/* profile top */
+.profile-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #ddddddba;
+}
+
+.profile-top h2 {
+    font-weight: 200;
+    font-size: 18px;
+}
+.profile-top p {
+    padding-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+/* profile top end */
+
+
+/* profile bottom */
+.profile-bottom {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 2rem 0;
+}
+
+/* profile bottom left */
+.profile-bottom-left {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-left-content .left-content {
+    padding: 15px;
+    color: #929292;
+    font-size: 15px;
+}
+
+.profile-left-content .left-content > .infor-detail {
+    margin-left: 2rem;
+    font-size: 15px;
+    color: black;
+}
+
+.profile-left-content .left-content > a {
+    padding-left: 8px;
+    font-size: 14px;
+    color: #146fc4;
+}
+
+.profile-left-content .left-content > input {
+    height: 2.5rem;
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 2px;
+    border: 1px solid #c2c1c1;
+    font-size: 15px;
+}
+
+#gender-male, #gender-female, #gender-other {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #c2c1c1;
+    margin-right: 5px;
+}
+
+.gender-options label {
+    font-size: 15px;
+    color: black;
+    margin-right: 20px;
+}
+
+#gender {
+    display: flex;
+    gap: 2rem;
+}
+/* profile bottom left end */
+
+/* profile bottom right */
+.profile-bottom-right {
+    border-left: 1px solid #ddddddba;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-bottom-right div {
+    padding: 15px;
+}
+
+.profile-bottom-right > .right-display-img > img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .13);
+}
+
+.profile-bottom-right > .right-choose-img > button {
+    padding: 0.8rem 2rem;
+    background-color: inherit;
+    border: 1px solid #cacacaba;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+    user-select: none;
+    transition: .2s;
+}
+
+.profile-bottom-right > .right-choose-img > button:hover {
+    background-color: #f3f2f2;
+}
+
+.profile-bottom-right > .right-file-limit > p {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #999;
+    user-select: none;
+}
+/* profile bottom right end */
+
+/* profile bottom end */
+
+/* save button */
+.save-button {
+    margin: 0 25%;
+    text-align: start;
+    top: 0;
+}
+
+.save-button > button {
+    color: whitesmoke;
+    background-color: #38d39f;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 1rem 2rem;
+}
+/* save button end */
+
+/* Profile content end */
