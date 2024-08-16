@@ -1,7 +1,5 @@
 import './ProfilePage.css';
 import { Link } from 'react-router-dom';
-import { FaPen, FaUser, FaBell, FaCoins, FaNotesMedical } from 'react-icons/fa';
-import { FaTicket } from 'react-icons/fa6';
 import Header from '../Common/Header/Header';
 import Footer from '../Common/Footer/Footer';
 import AccountSettingComponent from '../Component/AccountSetting/AccountSettingComponent';
@@ -12,7 +10,7 @@ function ProfilePage() {
       <Header />
       <div className="profile">
         <div className="profile-container">
-          <AccountSettingComponent />
+          <AccountSettingComponent pageName="profile" />
           <div className="profile-content">
             <div className="profile-top">
               <h2>Hồ Sơ Của Tôi</h2>
@@ -22,20 +20,26 @@ function ProfilePage() {
               <div className="profile-bottom-left">
                 <ul className="profile-left-content">
                   <li className="left-content">
-                    Tên đăng nhập 
+                    Tên đăng nhập
                     <span className="infor-detail">vietvan22</span>
                   </li>
                   <li className="left-content">
-                    Tên 
-                    <input type="text" value="Le Van Viet" className="infor-detail" />
+                    Tên
+                    <input
+                      type="text"
+                      value="Le Van Viet"
+                      className="infor-detail"
+                    />
                   </li>
                   <li className="left-content">
-                    Email 
-                    <span className="infor-detail">vietvan05032002@gmail.com</span>
+                    Email
+                    <span className="infor-detail">
+                      vietvan05032002@gmail.com
+                    </span>
                     <Link to="/">Thay Đổi</Link>
                   </li>
                   <li className="left-content">
-                    Số điện thoại 
+                    Số điện thoại
                     <span className="infor-detail">0986710164</span>
                     <Link to="/">Thay Đổi</Link>
                   </li>
@@ -43,23 +47,43 @@ function ProfilePage() {
                     Giới tính
                     <div className="gender-options">
                       <label htmlFor="gender-male">
-                        <input type="radio" id="gender-male" name="gender" value="male" />
+                        <input
+                          type="radio"
+                          id="gender-male"
+                          name="gender"
+                          value="male"
+                        />
                         Nam
                       </label>
                       <label htmlFor="gender-female">
-                        <input type="radio" id="gender-female" name="gender" value="female" />
+                        <input
+                          type="radio"
+                          id="gender-female"
+                          name="gender"
+                          value="female"
+                        />
                         Nữ
                       </label>
                       <label htmlFor="gender-other">
-                        <input type="radio" id="gender-other" name="gender" value="other" />
+                        <input
+                          type="radio"
+                          id="gender-other"
+                          name="gender"
+                          value="other"
+                        />
                         Khác
                       </label>
                     </div>
                   </li>
                   <li className="left-content">
-                    Ngày sinh 
+                    Ngày sinh
                     <span className="infor-detail">05/03/2002</span>
                     <Link to="/">Thay Đổi</Link>
+                  </li>
+                  <li className="left-content" id="save-infor">
+                    <button type="button" id="save-button">
+                      Lưu
+                    </button>
                   </li>
                 </ul>
               </div>
@@ -76,9 +100,9 @@ function ProfilePage() {
                 </div>
               </div>
             </div>
-            <div className="save-button">
-                  <button type="button">Lưu</button>
-            </div>
+            {/* <div className="save-button">
+              <button type="button">Lưu</button>
+            </div> */}
           </div>
         </div>
       </div>

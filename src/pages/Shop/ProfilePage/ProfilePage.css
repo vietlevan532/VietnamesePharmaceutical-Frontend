@@ -151,19 +151,25 @@
 /* profile bottom end */
 
 /* save button */
-.save-button {
-    margin: 0 25%;
-    text-align: start;
-    top: 0;
+#save-infor {
+    margin-top: 5px;
+    text-align: center;
 }
 
-.save-button > button {
+#save-button {
     color: whitesmoke;
     background-color: #38d39f;
     border: none;
     border-radius: 3px;
     font-size: 15px;
     padding: 1rem 2rem;
+    user-select: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#save-button:hover {
+    background-color: #64e7bb;
 }
 /* save button end */
 

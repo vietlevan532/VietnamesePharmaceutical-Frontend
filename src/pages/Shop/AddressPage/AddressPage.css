@@ -1,0 +1,185 @@
+.address {
+    margin-top: 8rem;
+    width: 100vw;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+.address-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 2rem 8rem;
+    justify-content: center;
+}
+
+.address-content {
+    display: grid;
+    grid-template-rows: 5rem auto;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .13);
+    border-radius: 2px;
+}
+
+/* address top */
+.address-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddddddba;
+    padding: 0 2rem;
+}
+
+.address-title > h2 {
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.add-address-btn > button {
+    background-color: #38d39f;
+    border: none;
+    border-radius: 2px;
+    color: whitesmoke;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 100;
+    user-select: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.add-address-btn > button:hover {
+    background-color: #62dbb3;
+}
+
+#plusIcon-inAddress {
+    margin: 0 5px;
+}
+/* address top end */
+
+
+/* address body */
+.address-body {
+    padding: 1rem 2rem;
+}
+
+.content-name {
+    margin-bottom: 1rem;
+}
+
+.content-name > h2 {
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.detail-address {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddddddba;
+    padding: 1rem 0;
+}
+
+.default-detail-address {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.detail-address-left, .detail-address-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail-address-left .contact {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0
+}
+
+.detail-address-left .contact div {
+    margin-right: 8px;
+    color: #999;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.address-name {
+    padding: 5px 0;
+}
+
+.address-name p {
+    color: #999;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.detail-address-left .contact .nick-name {
+    color: inherit;
+}
+
+.address-roles {
+    display: flex;
+    padding-top: 5px;
+    user-select: none;
+}
+
+.address-roles #default-address {
+    border: 1px solid #38d39f;
+    margin-right: 8px;
+    font-size: 14px;
+    padding: 3px;
+    color: #38d39f;
+}
+
+.address-roles #delivery-address {
+    border: 1px solid #999;
+    margin-right: 8px;
+    font-size: 14px;
+    padding: 3px;
+    color: #999;
+}
+
+.detail-address-right {
+    display: flex;
+    align-items: end;
+}
+
+.address-action a {
+    color: #0485cf;
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: none;
+    margin: 5px 5px 5px 8px;
+}
+
+.default-detail-address .set-default-btn button {
+    margin: 8px 0;
+    padding: 5px 15px;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid #ddddddba;
+    border-radius: 2px;
+    user-select: none;
+    cursor: not-allowed;
+    font-weight: 100;
+}
+
+.detail-address .set-default-btn button {
+    margin: 8px 0;
+    padding: 5px 15px;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid #999;
+    color: #4e4e4e;
+    border-radius: 2px;
+    font-weight: 100;
+    user-select: none;
+    cursor: pointer;
+}
+
+.detail-address .set-default-btn button:hover {
+    background-color: #f3f3f3ba;
+}
+
+/* address body end */

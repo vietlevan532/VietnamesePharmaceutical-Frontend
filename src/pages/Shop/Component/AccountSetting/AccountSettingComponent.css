@@ -72,8 +72,12 @@
 }
 
 .sub-option-list {
-    display: block;
+    /* display: none; */
     padding: 0 2rem;
+}
+
+.sub-option-list .active {
+    color: #38d39f;
 }
 
 .sub-option {
