@@ -1,0 +1,72 @@
+.privacy {
+    margin-top: 8rem;
+    width: 100vw;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+.privacy-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 2rem 8rem;
+    justify-content: center;
+}
+
+.privacy-content {
+    display: grid;
+    grid-template-rows: 5rem auto;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .13);
+    border-radius: 2px;
+    padding: 0 3rem;
+}
+
+/* privacy top */
+.privacy-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddddddba;
+}
+
+.privacy-title > h2 {
+    font-weight: 200;
+    font-size: 18px;
+}
+/* privacy top end */
+
+
+/* privacy body */
+.privacy-body {
+    padding: 1rem 0;
+}
+
+.privacy-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.privacy-action-name p {
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.privacy-action-btn button {
+    background-color: #38d39f;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.privacy-action-btn button:hover {
+    background-color: #5ae6b7;
+}
+/* privacy body end */

@@ -9,6 +9,7 @@ import CategoryComponent from './pages/Shop/Component/Category/CategoryComponent
 import ProfilePage from './pages/Shop/ProfilePage/ProfilePage';
 import AddressPage from './pages/Shop/AddressPage/AddressPage';
 import PaymentPage from './pages/Shop/PaymentPage/PaymentPage';
+import PrivacyPage from './pages/Shop/PrivacyPage/PrivacyPage';
 
 export function App() {
   return (
@@ -26,6 +27,7 @@ export function App() {
       <Route path="/profile" element={<ProfilePage />} />
       <Route path="/address" element={<AddressPage />} />
       <Route path="/payment" element={<PaymentPage />} />
+      <Route path="/privacy" element={<PrivacyPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignUpPage />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />

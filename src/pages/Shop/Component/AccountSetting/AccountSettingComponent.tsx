@@ -63,8 +63,14 @@ function AccountSettingComponent({ pageName }: AccountSettingProps) {
               <li className="sub-option">
                 <Link to="/">Cài đặt thông báo</Link>
               </li>
-              <li className="sub-option">
-                <Link to="/">Những thiết lập riêng tư</Link>
+              <li
+                className={
+                  pageName.toUpperCase() === 'PRIVACY'
+                    ? 'sub-option active'
+                    : 'sub-option'
+                }
+              >
+                <Link to="/privacy">Những thiết lập riêng tư</Link>
               </li>
             </ul>
           </li>
