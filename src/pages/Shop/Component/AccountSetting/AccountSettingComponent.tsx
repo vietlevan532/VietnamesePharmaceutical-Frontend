@@ -39,8 +39,14 @@ function AccountSettingComponent({ pageName }: AccountSettingProps) {
               >
                 <Link to="/profile">Hồ Sơ</Link>
               </li>
-              <li className="sub-option">
-                <Link to="/">Ngân Hàng</Link>
+              <li
+                className={
+                  pageName.toUpperCase() === 'PAYMENT'
+                    ? 'sub-option active'
+                    : 'sub-option'
+                }
+              >
+                <Link to="/payment">Ngân Hàng</Link>
               </li>
               <li
                 className={
