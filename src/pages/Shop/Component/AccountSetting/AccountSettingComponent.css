@@ -3,7 +3,7 @@
     background-color: whitesmoke;
 }
 
-.account-setting>.account {
+.account-setting > .account {
     display: flex;
     padding: 15px;
 }
@@ -17,7 +17,7 @@
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .13);
 }
 
-.account-name>h3 {
+.account-name > h3 {
     font-weight: bold;
     font-size: 16px;
     margin-bottom: 2px;
@@ -58,16 +58,15 @@
 .option {
     margin: 15px 0;
     font-size: 15px;
-    color: #555;
 }
 
-.option>a {
+.option > a {
     text-decoration: none;
     color: inherit;
     transition: .2s;
 }
 
-.option>a:hover {
+.option > a:hover {
     color: #38d39f;
 }
 
@@ -86,12 +85,12 @@
     color: #555;
 }
 
-.sub-option>a {
+.sub-option > a {
     text-decoration: none;
     color: inherit;
     transition: .2s;
 }
-.sub-option>a:hover {
+.sub-option > a:hover {
     color: #38d39f;
 }
 /* Account setting end */

@@ -37,7 +37,7 @@ function AccountSettingComponent({ pageName }: AccountSettingProps) {
                     : 'sub-option'
                 }
               >
-                <Link to="/profile">Hồ Sơ</Link>
+                <Link to="/user/account/profile">Hồ Sơ</Link>
               </li>
               <li
                 className={
@@ -46,7 +46,7 @@ function AccountSettingComponent({ pageName }: AccountSettingProps) {
                     : 'sub-option'
                 }
               >
-                <Link to="/payment">Ngân Hàng</Link>
+                <Link to="/user/account/payment">Ngân Hàng</Link>
               </li>
               <li
                 className={
@@ -55,13 +55,25 @@ function AccountSettingComponent({ pageName }: AccountSettingProps) {
                     : 'sub-option'
                 }
               >
-                <Link to="/address">Địa chỉ</Link>
+                <Link to="/user/account/address">Địa chỉ</Link>
               </li>
-              <li className="sub-option">
-                <Link to="/">Đổi mật khẩu</Link>
+              <li 
+                className={
+                  pageName.toUpperCase() === 'CHANGE-PASSWORD'
+                    ? 'sub-option active'
+                    : 'sub-option'
+                }
+              >
+                <Link to="/user/setting/change-password">Đổi mật khẩu</Link>
               </li>
-              <li className="sub-option">
-                <Link to="/">Cài đặt thông báo</Link>
+              <li 
+                className={
+                  pageName.toUpperCase() === 'NOTIFICATION'
+                    ? 'sub-option active'
+                    : 'sub-option'
+                }
+              >
+                <Link to="/user/setting/notification">Cài đặt thông báo</Link>
               </li>
               <li
                 className={
@@ -70,7 +82,7 @@ function AccountSettingComponent({ pageName }: AccountSettingProps) {
                     : 'sub-option'
                 }
               >
-                <Link to="/privacy">Những thiết lập riêng tư</Link>
+                <Link to="/user/setting/privacy">Những thiết lập riêng tư</Link>
               </li>
             </ul>
           </li>

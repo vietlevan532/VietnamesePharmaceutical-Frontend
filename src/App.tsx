@@ -10,6 +10,7 @@ import ProfilePage from './pages/Shop/ProfilePage/ProfilePage';
 import AddressPage from './pages/Shop/AddressPage/AddressPage';
 import PaymentPage from './pages/Shop/PaymentPage/PaymentPage';
 import PrivacyPage from './pages/Shop/PrivacyPage/PrivacyPage';
+import NotificationSettings from './pages/Shop/NotificationSettings/NotificationSettings';
 
 export function App() {
   return (
@@ -24,10 +25,11 @@ export function App() {
           />
         }
       />
-      <Route path="/profile" element={<ProfilePage />} />
-      <Route path="/address" element={<AddressPage />} />
-      <Route path="/payment" element={<PaymentPage />} />
-      <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/user/account/profile" element={<ProfilePage />} />
+      <Route path="/user/account/address" element={<AddressPage />} />
+      <Route path="/user/account/payment" element={<PaymentPage />} />
+      <Route path="/user/setting/privacy" element={<PrivacyPage />} />
+      <Route path="/user/setting/notification" element={<NotificationSettings />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/signup" element={<SignUpPage />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />

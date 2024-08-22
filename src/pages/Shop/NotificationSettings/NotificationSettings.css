@@ -1,0 +1,117 @@
+.notification-settings {
+    margin-top: 7rem;
+    width: 100vw;
+    height: auto;
+    background-color: whitesmoke;
+}
+
+.notification-setting-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 2rem 8rem;
+    justify-content: center;
+}
+
+.notification-setting-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .13);
+    border-radius: 2px;
+}
+
+.title-options, 
+.setting-option > .setting-option-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-notification,
+.sms-notification {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.email-notification {
+    border-bottom: 1px solid #f7f7f7;
+    margin-bottom: 1rem;
+}
+
+.title-options {
+    margin-bottom: 2rem;
+}
+
+.email-options li,
+.sms-options li {
+    padding: 0 0 2rem 2rem;
+}
+
+.email-options h3,
+.sms-options h3 {
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 5px;
+    user-select: none;
+}
+
+.email-options span,
+.sms-options span {
+    color: #999;
+    font-size: 14px;
+    font-weight: 100;
+    user-select: none;
+}
+
+.hr-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #dfdfdf;
+}
+ 
+
+.sms-notification {
+    padding-top: 1rem;
+}
+
+.notify-option-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.notify-option-toggle > .switch-toggle {
+    background-color: #dddddd;
+    width: 3.2rem;
+    height: 2rem;
+    border-radius: 50px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .12);
+    cursor: pointer;
+    position: relative;
+    transition: .2s;
+}
+
+.notify-option-toggle > .switch-toggle::before {
+    position: absolute;
+    content: '';
+    background-color: #fff;
+    width: 1.6rem;
+    height: 1.6rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .12);
+    border-radius: 50%;
+    margin: 3px;
+    transition: .2s;
+}
+
+.notify-option-toggle input {
+    display: none;
+}
+
+.notify-option-toggle input:checked + .switch-toggle {
+    background-color: #38d39f;
+}
+
+.notify-option-toggle input:checked + .switch-toggle::before {
+    transform: translateX(1.2rem);
+}
