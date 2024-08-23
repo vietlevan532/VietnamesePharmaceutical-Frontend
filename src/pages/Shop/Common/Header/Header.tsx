@@ -77,11 +77,11 @@ function Header() {
               </li>
               <li className="li-top-content">
                 <Link to="/login" className="top-link">
-                  Đăng Ký
+                  Đăng Nhập
                 </Link>
                 <span>|</span>
                 <Link to="/signup" className="top-link">
-                  Đăng Nhập
+                  Đăng Ký
                 </Link>
               </li>
             </ul>

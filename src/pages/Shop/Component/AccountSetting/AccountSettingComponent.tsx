@@ -64,7 +64,7 @@ function AccountSettingComponent({ pageName }: AccountSettingProps) {
                     : 'sub-option'
                 }
               >
-                <Link to="/user/setting/change-password">Đổi mật khẩu</Link>
+                <Link to="/user/account/change-password">Đổi mật khẩu</Link>
               </li>
               <li 
                 className={

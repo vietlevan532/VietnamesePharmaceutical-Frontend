@@ -11,6 +11,7 @@ import AddressPage from './pages/Shop/AddressPage/AddressPage';
 import PaymentPage from './pages/Shop/PaymentPage/PaymentPage';
 import PrivacyPage from './pages/Shop/PrivacyPage/PrivacyPage';
 import NotificationSettings from './pages/Shop/NotificationSettings/NotificationSettings';
+import ChangePassword from './pages/Shop/ChangePassword/ChangePassword';
 
 export function App() {
   return (
@@ -28,6 +29,7 @@ export function App() {
       <Route path="/user/account/profile" element={<ProfilePage />} />
       <Route path="/user/account/address" element={<AddressPage />} />
       <Route path="/user/account/payment" element={<PaymentPage />} />
+      <Route path="/user/account/change-password" element={<ChangePassword />} />
       <Route path="/user/setting/privacy" element={<PrivacyPage />} />
       <Route path="/user/setting/notification" element={<NotificationSettings />} />
       <Route path="/login" element={<LoginPage />} />

@@ -84,6 +84,7 @@
     border-radius: 2px;
     border: 1px solid #c2c1c1;
     font-size: 15px;
+    outline-color: #38d39f;
 }
 
 #gender-male, #gender-female, #gender-other {
