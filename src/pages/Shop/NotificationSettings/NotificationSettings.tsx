@@ -21,7 +21,7 @@ function NotificationSettings() {
             <Header />
             <div className="notification-settings">
                 <div className="notification-setting-container">
-                    <AccountSettingComponent pageName="notification" />
+                    <AccountSettingComponent pageName='my-account' itemName="notification" />
                     <div className="notification-setting-content">
                         <div className="email-notification">
                             <ul className="email-options">

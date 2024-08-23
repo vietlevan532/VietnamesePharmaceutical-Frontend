@@ -2,7 +2,6 @@ import './ChangePassword.css';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import Header from '../Common/Header/Header';
 import Footer from '../Common/Footer/Footer';
 import AccountSettingComponent from '../Component/AccountSetting/AccountSettingComponent';
@@ -24,7 +23,7 @@ function ChangePassword() {
             <Header />
             <div className="change-password">
                 <div className="change-password-container">
-                    <AccountSettingComponent pageName='change-password' />
+                    <AccountSettingComponent pageName="my-account" itemName="change-password" />
                     <div className="change-password-content">
                         <div className="change-password-top">
                             <h2>Đổi Mật Khẩu</h2>

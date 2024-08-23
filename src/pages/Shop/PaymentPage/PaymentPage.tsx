@@ -11,7 +11,7 @@ function PaymentPage() {
       <Header />
       <div className="payment">
         <div className="payment-container">
-          <AccountSettingComponent pageName="payment" />
+          <AccountSettingComponent pageName="my-account" itemName="payment" />
           <div className="payment-content">
             <div className="payment-top">
               <div className="payment-title">

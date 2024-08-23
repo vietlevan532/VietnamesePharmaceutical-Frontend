@@ -11,7 +11,7 @@ function AddressPage() {
       <Header />
       <div className="address">
         <div className="address-container">
-          <AccountSettingComponent pageName="address" />
+          <AccountSettingComponent pageName="my-account" itemName="address" />
           <div className="address-content">
             <div className="address-top">
               <div className="address-title">

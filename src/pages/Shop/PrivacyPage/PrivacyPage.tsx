@@ -9,7 +9,7 @@ function PrivacyPage() {
       <Header />
       <div className="privacy">
         <div className="privacy-container">
-          <AccountSettingComponent pageName="privacy" />
+          <AccountSettingComponent pageName="my-account" itemName="privacy" />
           <div className="privacy-content">
             <div className="privacy-top">
               <div className="privacy-title">
