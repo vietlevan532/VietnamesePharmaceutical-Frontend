@@ -10,7 +10,7 @@ function ProfilePage() {
       <Header />
       <div className="profile">
         <div className="profile-container">
-          <AccountSettingComponent pageName='my-account' itemName="profile" />
+          <AccountSettingComponent pageName="my-account" itemName="profile" />
           <div className="profile-content">
             <div className="profile-top">
               <h2>Hồ Sơ Của Tôi</h2>
